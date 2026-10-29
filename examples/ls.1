@@ -1,0 +1,31 @@
+.Dd May 7, 2021
+.Dt LS 1
+.Os
+.Sh NAME
+.Nm ls
+.Nd list directory contents
+.Sh SYNOPSIS
+.Nm
+.Op Fl la
+.Op Ar file ...
+.Sh DESCRIPTION
+The
+.Nm
+utility lists files.
+It is \fBbold\fR and \fIitalic\fR.
+.Pp
+Options:
+.Bl -tag -width Ds
+.It Fl l
+Long format.
+.It Fl a
+All entries.
+.El
+.Ss Exit
+Exits 0 on success, see
+.Xr stat 2 .
+.Bd -literal -offset indent
+ls -la /tmp
+.Ed
+.Sh SEE ALSO
+.Xr find 1
